@@ -1,0 +1,5 @@
+# Uncommon HTML Bug: Multiple Event Listeners
+This repository demonstrates an uncommon bug related to adding multiple event listeners to an HTML element using both `onmouseover` and `addEventListener`.  The use of `onmouseover` in this way can lead to unexpected behavior, particularly when combined with `addEventListener`.  It is recommended to use `addEventListener` consistently for all event handling.
+
+## Bug Description
+The bug lies in the way an event listener is added to the `div` with id `myDiv`. The `onmouseover` property is used to add an event listener for the `mouseover` event. This approach can cause unexpected behavior if you also add event listener for the same event using `addEventListener` method. The correct way to add event listeners is to use the `addEventListener` method consistently.
