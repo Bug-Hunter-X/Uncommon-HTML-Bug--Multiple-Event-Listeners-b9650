@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    //Correct way to add event listener. This is the recommended approach.
+    document.getElementById('myDiv').addEventListener('mouseover', function() {
+      alert('Mouseover!');
+    });
+    document.getElementById('myDiv').addEventListener('click',function(){
+        alert('Clicked!');
+    })
+  </script>
+</body>
+</html>
